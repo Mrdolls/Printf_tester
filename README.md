@@ -1,6 +1,6 @@
 1. Put the folder "t_printf" into your folder where your makefile is.
   
-2. Import the .h in your main with :
+2. Import the .h in your main file with :
 ```c
 #include "t_printf/t_printf.h"
 ```
