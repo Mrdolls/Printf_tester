@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libtester.h                                        :+:      :+:    :+:   */
+/*   t_printf.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mgingast <mgingast <mgingast@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/06 09:02:34 by mgingast          #+#    #+#             */
-/*   Updated: 2025/05/21 17:53:08 by mgingast         ###   ########.fr       */
+/*   Updated: 2025/05/21 19:48:44 by mgingast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBTESTER
-# define LIBTESTER
+#ifndef T_PRINTF
+# define T_PRINTF
 # include "../ft_printf.h"
 # include <stdio.h>
 # include <stdarg.h>
@@ -50,6 +50,7 @@ void	check_printf();
 																			\
 		check_output(strcmp(buf1, buf2) == 0);								\
 		check_len(len_a, len_b, 0);											\
+		write(1, "\033[0;33m---------------------------------\n\n\033[0m", 47);	\
 		} while (0)
 
 	#define TEST_PRINTFULL()	\
