@@ -22,3 +22,13 @@ int main()
 	return (1);
 }
 ```
+
+Preview:
+```bash
+printf   : This is a custom test: 45
+ft_printf: This is a custom test: 45
+Result: OK
+Len   : OK
+
+--------------------------------
+```
