@@ -6,7 +6,7 @@
 /*   By: mgingast <mgingast <mgingast@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/06 10:10:16 by mgingast          #+#    #+#             */
-/*   Updated: 2025/05/21 16:51:54 by mgingast         ###   ########.fr       */
+/*   Updated: 2025/05/21 17:58:03 by mgingast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	check_len(int len_a, int len_b, int offset)
 	if (len_a == (len_b - offset))
 		printf("\033[1;32mOK\033[0m\n\n");
 	else
-		printf("\033[1;31mKO\033[0m\n\n");
+		printf("\033[1;31mKO\n%i != %i\033[0m\n\n", len_a, len_b);
 }
 
 void	check_output(int result)
@@ -57,8 +57,7 @@ void check_printf()
 	TEST_PRINTF("%%p: %p", _char);
 	TEST_PRINTF("%%x: %x", 42);
 	TEST_PRINTF("%%X: %X", 42);
-	TEST_PRINTF("%%%: %%");
+	TEST_PRINTF("%%%c: %%", '%');
 	TEST_PRINTF("ALL: %%(%%%%), %c(%%c), %s(%%s), %i(%%i), %d(%%d), %u(%%u), %p(%%p), %x(%%x), %X(%%X)", 'c', _char, 42, 42, 42, _char, 42, 42);
 	TEST_PRINTF("NULL: %s(%%s(null)), %p(%%p(null))", NULL, NULL);
-	TEST_PRINTF("OMG (the moulinette doesn't care): Hello World%");
 }
