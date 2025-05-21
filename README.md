@@ -1,11 +1,11 @@
-1) Put the folder "t_printf" into your folder where your makefile is.
+1. Put the folder "t_printf" into your folder where your makefile is.
   
-2) Import the lib in your main with :
+2. Import the lib in your main with :
 ```c
 #include "t_printf/t_printf.h"
 ```
 
-3a) For ALL tests, set this:
+3a. For ALL tests, set this:
 ```c
 int main()
 {
@@ -14,7 +14,7 @@ int main()
 }
 ```
 
-3b) For CUSTOM test, set this:
+3b. For CUSTOM test, set this:
 ```c
 int main()
 {
