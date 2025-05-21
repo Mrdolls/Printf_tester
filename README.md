@@ -32,3 +32,8 @@ Len   : OK
 
 --------------------------------
 ```
+
+4. For the compilation:
+```bash
+cc -Wall -Wextra -Werror *.c t_printf/t_prinf.a
+```
