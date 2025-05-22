@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mgingast <mgingast <mgingast@student.42    +#+  +:+       +#+         #
+#    By: mgingast <mgingast@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/24 09:08:55 by mgingast          #+#    #+#              #
-#    Updated: 2025/05/21 19:48:55 by mgingast         ###   ########.fr        #
+#    Updated: 2025/05/22 21:25:12 by mgingast         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ t_printf.c
 INCLUDES = -Iincludes
 
 .c.o:
-	cc $(INCLUDES) $(CFLAGS) -c $< -o ${<:.c=.o}
+	cc $(INCLUDES) -c $< -o ${<:.c=.o}
 
 OFILES = $(SRCS:.c=.o)
 
