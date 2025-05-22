@@ -6,7 +6,7 @@
 /*   By: mgingast <mgingast <mgingast@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/06 10:10:16 by mgingast          #+#    #+#             */
-/*   Updated: 2025/05/21 19:48:26 by mgingast         ###   ########.fr       */
+/*   Updated: 2025/05/22 10:41:43 by mgingast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	check_len(int len_a, int len_b, int offset)
 	if (len_a == (len_b - offset))
 		printf("\033[1;32mOK\033[0m\n\n");
 	else
-		printf("\033[1;31mKO\nError: %i != %i\033[0m\n\n", len_a, len_b);
+		printf("\033[1;31mKO\nError: you have %i (!= %i)\033[0m\n\n", len_a, len_b);
 }
 
 void	check_output(int result)
@@ -59,5 +59,5 @@ void check_printf()
 	TEST_PRINTF("%%X: %X", 42);
 	TEST_PRINTF("%%%c: %%", '%');
 	TEST_PRINTF("ALL: %%(%%%%), %c(%%c), %s(%%s), %i(%%i), %d(%%d), %u(%%u), %p(%%p), %x(%%x), %X(%%X)", 'c', _char, 42, 42, 42, _char, 42, 42);
-	TEST_PRINTF("NULL: %s(%%s(null)), %p(%%p(null))", NULL, NULL);
+	TEST_PRINTF("NULL: %s(%%s), %p(%%p)", NULL, NULL);
 }
