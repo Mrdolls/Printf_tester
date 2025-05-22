@@ -37,3 +37,23 @@ Len   : OK
 ```bash
 cc -Wall -Wextra -Werror *.c t_printf/t_prinf.a
 ```
+5. Exemples:
+```bash
+printf   : This is a custom test: 45
+ft_printf: This is a custom test: 45
+Result: OK
+Len   : KO
+Error: 25 != 27
+
+---------------------------------
+```
+
+```bash
+printf   : This is a custom test: Bad ft_printf :(
+ft_printf: This is a custom test: ad ft_printf :(
+Result: KO
+Len   : KO
+Error: 39 != 40
+
+---------------------------------
+```
