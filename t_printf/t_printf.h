@@ -6,7 +6,7 @@
 /*   By: mgingast <mgingast <mgingast@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/06 09:02:34 by mgingast          #+#    #+#             */
-/*   Updated: 2025/05/21 19:48:44 by mgingast         ###   ########.fr       */
+/*   Updated: 2025/05/22 11:25:53 by mgingast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdarg.h>
 # include <string.h>
 # include <stdlib.h>
+# include <unistd.h>
 
 
 void	check_len(int len_a, int len_b, int offset);
