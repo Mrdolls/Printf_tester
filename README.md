@@ -1,6 +1,6 @@
 1. git clone in your work folder :
 ```bash
-
+git clone git@github.com:Mrdolls/t_printf.git
 ```
   
 2. Import the .h in your main file with :
