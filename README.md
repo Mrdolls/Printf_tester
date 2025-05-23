@@ -1,4 +1,7 @@
-1. Put the folder "t_printf" into your folder where your makefile is.
+1. git clone in your work folder :
+```bash
+
+```
   
 2. Import the .h in your main file with :
 ```c
