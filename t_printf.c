@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   t_printf.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mgingast <mgingast@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mgingast <mgingast <mgingast@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/06 10:10:16 by mgingast          #+#    #+#             */
-/*   Updated: 2025/05/22 20:15:55 by mgingast         ###   ########.fr       */
+/*   Updated: 2025/05/23 18:21:31 by mgingast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,5 +59,5 @@ void check_printf()
 	TEST_PRINTF("%%X: %X", 42);
 	TEST_PRINTF("%%%c: %%", '%');
 	TEST_PRINTF("ALL: %%(%%%%), %c(%%c), %s(%%s), %i(%%i), %d(%%d), %u(%%u), %p(%%p), %x(%%x), %X(%%X)", 'c', _char, 42, 42, 42, _char, 42, 42);
-	TEST_PRINTF("NULL: %s(%%s), %p(%%p)", NULL, NULL);
+	TEST_PRINTF("NULL: %s(%%s), %i(%%i), %d(%%d), %u(%%u), %p(%%p), %x(%%x), %X(%%X)", NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 }
